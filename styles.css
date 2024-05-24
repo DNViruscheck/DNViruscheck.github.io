@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #152b2e; /* Темно-зеленый цвет фона */
-    background-image: url('background.jpg'); /* Путь к вашему фото заднего фона */
     background-size: cover;
     background-position: center;
     color: #ffffff; /* Белый цвет текста */

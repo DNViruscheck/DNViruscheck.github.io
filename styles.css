@@ -40,6 +40,17 @@ h2 {
     color: #333;
 }
 
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
 .social-links {
     list-style-type: none;
     padding: 0;
@@ -71,7 +82,7 @@ h2 {
     background-color: #777;
 }
 
-footer {
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -79,4 +90,23 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Профиль картинки по середине */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Цвета для "DN" в ярко-зеленом */
+.profile h2 {
+    font-size: 24px;
+    margin: 5px 0;
+    color: #4CAF50; /* Ярко-зеленый */
+}
+
+/* Остальные буквы в белом */
+.profile h2 span {
+    color: white;
 }

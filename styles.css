@@ -2,7 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #152b2e; /* Темно-зеленый цвет фона */
+    background-image: url('images/background.jpg'); /* Путь к вашему фото заднего фона */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Белый цвет текста */
 }
 
 header {
@@ -37,7 +41,7 @@ main {
 }
 
 h2 {
-    color: #333;
+    color: #ffffff; /* Белый цвет текста */
 }
 
 .profile {
@@ -51,6 +55,12 @@ h2 {
     height: 150px;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 .social-links {
     list-style-type: none;
     padding: 0;
@@ -60,53 +70,60 @@ h2 {
 }
 
 .social-links li {
-    margin: 10px;
+    margin
+: 10px;
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    background-color: #555;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+display: flex;
+align-items: center;
+background-color: #555;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
 }
 
 .btn i {
-    margin-right: 8px;
+margin-right: 8px;
 }
 
 .btn:hover {
-    background-color: #777;
+background-color: #777;
 }
 
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px 0;
+position: fixed;
+width: 100%;
+bottom: 0;
 }
 
 /* Профиль картинки по середине */
 .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
-/* Цвета для "DN" в ярко-зеленом */
+/* Цвета для "DN" в ярко-зеленом /
 .profile h2 {
-    font-size: 24px;
-    margin: 5px 0;
-    color: #4CAF50; /* Ярко-зеленый */
+font-size: 24px;
+margin: 5px 0;
+color: #4CAF50; / Ярко-зеленый */
 }
 
 /* Остальные буквы в белом */
 .profile h2 span {
-    color: white;
+color: white;
+}
+
+/* Медиазапросы для мобильных устройств /
+@media (max-width: 768px) {
+body {
+background-color: #1e3d3b; / Темно-зеленый цвет для мобильных устройств */
 }

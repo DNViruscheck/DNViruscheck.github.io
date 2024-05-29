@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             main.style.marginLeft = "220px";
         } else {
             sidebar.style.left = "-220px";
-            main.style.marginLeft = "0";
+            main.style.marginLeft = "20px";
         }
     });
 });

@@ -15,12 +15,19 @@ header {
 
 .container {
     display: flex;
+    position: relative;
 }
 
 .sidebar {
     background-color: #444;
     padding: 20px;
     width: 200px;
+    position: fixed;
+    top: 0;
+    left: -220px; /* Скрыть панель */
+    height: 100%;
+    overflow-x: hidden;
+    transition: left 0.3s;
 }
 
 .sidebar ul {
@@ -42,9 +49,28 @@ header {
     text-decoration: underline;
 }
 
+.sidebar-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.sidebar-toggle:focus {
+    outline: none;
+}
+
 main {
     flex-grow: 1;
     padding: 20px;
+    margin-left: 220px; /* Начальное смещение основного контента */
+    transition: margin-left 0.3s;
 }
 
 h2 {
@@ -130,18 +156,15 @@ footer {
 
 /* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
-    body {
-        background-color: #1e3d3b; /* Темно-зеленый цвет для мобильных устройств */
-    }
-
     .container {
         flex-direction: column;
     }
 
     .sidebar {
         width: 100%;
-        padding: 10px;
-        text-align: center;
+        height: auto;
+        position: relative;
+        left: 0;
     }
 
     .sidebar ul {
@@ -152,6 +175,16 @@ footer {
 
     .sidebar ul li {
         margin: 5px 0;
+    }
+
+    .sidebar-toggle {
+        top: auto;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    main {
+        margin-left: 0;
     }
 
     .profile img {
@@ -181,4 +214,3 @@ footer {
         margin: 5px 0;
     }
 }
-
